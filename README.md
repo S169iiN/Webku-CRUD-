@@ -1,2 +1,2 @@
 # Webku-CRUD-
-Tugas Pemrograman Internet. 
+Tugas Pemrograman Internet
