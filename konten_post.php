@@ -18,6 +18,7 @@ $no=0;
 $id=$row['idpost'];
 $tanggal=$row['tanggalpost'];
 $penulis=$row['penulis'];
+$judul	=$row['judul'];
 $kategori=$row['idkategori'];
 $namakategori=$row['namakategori'];
 $isi_full=$row['isi'];
@@ -25,7 +26,7 @@ $isi_sebagian=substr($row['isi'],1,100);
 echo "
 <tr>
 	<td>
-		<small>Tanggal dipost : $tanggal, penulis : $penulis</small>
+		<small>Tanggal dipost : $tanggal, penulis : $penulis Judul : $judul</small>
 	</td>
 </tr>
 <tr>

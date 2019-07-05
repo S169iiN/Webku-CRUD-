@@ -88,6 +88,7 @@ $no=0;
 $idpost=$row['idpost'];
 $tanggal=$row['tanggalpost'];
 $penulis=$row['penulis'];
+$judul  =$row['judul'];
 $kategori=$row['idkategori'];
 $namakategori=$row['namakategori'];
 $isi_full=$row['isi'];
@@ -96,7 +97,7 @@ echo "tetetetetetetet";
 echo "
 <tr>
   <td>
-    <small>Tanggal dipost : $tanggal, penulis : $penulis</small>
+    <small>Tanggal dipost : $tanggal, penulis : $penulis judul : $judul</small>
   </td>
 </tr>
 <tr>
