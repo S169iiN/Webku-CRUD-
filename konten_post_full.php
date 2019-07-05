@@ -78,7 +78,7 @@ $post=$_GET['post'];
 $sql="select a.*,b.namakategori
         from post a
         join kategori b on a.idkategori=b.idkategori
-        limit $post,2";
+         where idpost='$post'";
 $result=$db_connect -> query($sql);
 
 echo "<table border=0 class=table1>";
@@ -92,6 +92,7 @@ $kategori=$row['idkategori'];
 $namakategori=$row['namakategori'];
 $isi_full=$row['isi'];
 $isi_sebagian=substr($row['isi'],1,100);
+echo "tetetetetetetet";
 echo "
 <tr>
   <td>
@@ -107,7 +108,7 @@ echo "
   <td>$isi_full</td>
 </tr>
 <tr>
-  <td></td>
+  <td>idpost: $idpost</td>
 </tr>
 <tr>
   <td><br></td>
@@ -120,7 +121,7 @@ include ('comment_post.php');
 
 echo "<a href=index.php>HOME</a>";
  ?>
-          
+ 
       </section>
     </div>
     <!-- ########################################################################################## -->

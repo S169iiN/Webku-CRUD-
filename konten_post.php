@@ -37,7 +37,7 @@ echo "
 	<td></td>
 </tr>
 <tr>
-	<td>$isi_sebagian ... <a href='konten_post_full.php'>read more<a/></td>
+	<td>$isi_sebagian ... <a href='konten_post_full.php?post=$id'>read more<a/></td>
 </tr>
 <tr>
 	<td><br></td>
@@ -48,3 +48,4 @@ echo "</table>";
 echo "Paging :
 <a href=?paging=0>1> </a> <a href=?paging=2>2</a> <a href=?paging=4>3</a>";
  ?>
+ 
